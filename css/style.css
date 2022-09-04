@@ -44,15 +44,18 @@ body {
 .projects__item {
 	width: 100%;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: white;
 	border: 1px solid white;
 	cursor: pointer;
+	padding: 0 10px;
 }
 
 .projects__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 	color: rgb(62, 55, 55);
 	padding: 5px 5px;
+	line-height: 25px;
 }
