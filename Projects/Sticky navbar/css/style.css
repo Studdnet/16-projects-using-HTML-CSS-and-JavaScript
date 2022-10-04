@@ -1,0 +1,11 @@
+
+
+.header__logo {
+	width: 60px;
+}
+
+
+.header__logo img {
+	max-width: 100%;
+	border-radius: 20px;
+}
