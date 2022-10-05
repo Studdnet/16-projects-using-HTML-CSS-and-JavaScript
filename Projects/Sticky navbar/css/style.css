@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600&display=swap');
+
+:root {
+	--main-bg-color: #223333;
+	--primary-color: #556666;
+	--second-color: #224455;
+	--third-color: #bbbbaa;
+	--fourth-color: #888877;
+}
+
+/* https://www.degraeve.com/color-palette/index.php?q=https://www.bootstrapbayblog.com/wp-content/uploads/2021/03/front-end-developer-1.jpg,1F2C375A5E622F3D49BEBEB686817C,122E43555F66233D55C2C1B28C8276 */
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 15px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.header {
+	background-color: var(--main-bg-color);
+}
+
+.header__box {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__search {
+	width: 30vw;
+	height: 40px;
+	background-color: var(--primary-color);
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--main-bg-color);
+}
+
+.search__input {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	outline: none;
+}
+
+.search__input::placeholder {
+	color: #bbbbaa;
+}
+
+.search__button img{
+	width: 22px;
+	background-color: var(--primary-color);
+}
+
+.search__button {
+	border: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	cursor: pointer;
+}
+
+.header__content {
+	height: 100vh;
+	background: url("../img/main-background.jpg") center center/cover no-repeat;
+}
+
+.header__list {
+	display: flex;
+}
+
+.header__item {
+	margin-right: 20px;
+	list-style-type: none;
+}
+
+.header__link {
+	color: #fff;
+	text-decoration: none;
+}
+
 
 
 .header__logo {
@@ -7,5 +111,5 @@
 
 .header__logo img {
 	max-width: 100%;
-	border-radius: 20px;
+	border-radius: 10px;
 }
