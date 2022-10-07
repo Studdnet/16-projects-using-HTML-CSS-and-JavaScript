@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 15px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 100%;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 15px;
+	overflow: hidden;
+}
+
+.title {
+	color: var(--main-bg-color);
+	font-size: 35px;
+}
+
+.text {
+	color: var(--light-gray);
+	font-size: 20px;
+}
+
+.btn {
+	background:#bb77bb;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+	background-color:#bd4abd;
+	color: var(--primary-color);
+	text-shadow: #fff;
+}
+
+.btn:active {
+	position:relative;
+	top:1px;
+}

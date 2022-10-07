@@ -1,78 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600&display=swap');
-
-:root {
-	--main-bg-color: #002299;
-	--primary-color: #002266;
-	--second-color: #0066dd;
-	--third-color: #00eeff;
-	--fourth-color: #bb77bb;
-	--light-gray: rgb(236, 234, 234);
-}
-
-/* https://www.degraeve.com/color-palette/index.php?q=https://miro.medium.com/max/1400/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg,022A610B2B4C0C5C9A14ACCAAC89AB,002391002A6D0066E100EAFFBE78BB*/
-
-
-
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Red Hat Display', sans-serif;
-	font-size: 15px;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 100%;
-}
-
-.container {
-	margin: 0 auto;
-	max-width: 1140px;
-	padding: 0 10px;
-	overflow: hidden;
-}
-
-.title {
-	color: var(--main-bg-color);
-	font-size: 35px;
-}
-
-.text {
-	color: var(--light-gray);
-	font-size: 20px;
-}
-
-.btn {
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-}
-
-.btn:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-
-.btn:active {
-	position:relative;
-	top:1px;
-}
+@import url('var.css');
+@import url('bases.css');
 
 .header {
 	background-color: var(--main-bg-color);
@@ -91,6 +19,8 @@ body {
 	background-color: var(--primary-color);
 	border-radius: 40px;
 	border: 1px solid var(--main-bg-color);
+	display: flex;
+	padding: 0 10px;
 }
 
 .search__bar {
@@ -105,7 +35,7 @@ body {
 	border: none;
 	color: #fff;
 	outline: none;
-	padding: 0 20px;
+	padding: 0px 1px;
 	border: 0;
 }
 
@@ -116,12 +46,17 @@ body {
 .search__button img {
 	width: 22px;
 	background-color: var(--primary-color);
+	transition: all 0.3s ease 0s;
+}
+
+.search__button img:hover {
+	transform: scale(1.2);
 }
 
 .search__button {
 	border: 0;
-	width: 40px;
-	height: 40px;
+	width: 37px;
+	height: 37px;
 	background: transparent;
 	cursor: pointer;
 }
@@ -143,25 +78,50 @@ body {
 .header__link {
 	color: #fff;
 	text-decoration: none;
+	position: relative;
+	transition: all 0.3s ease 0s;
 }
 
+.header__link::before {
+	content: '';
+	display: block;
+	width: 0%;
+	height: 1px;
+	background-color: var(--light-gray);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all 0.3s ease 0s;
+}
+
+.header__link:hover::before {
+	width: 100%;
+	background-color: var(--yellow);
+}
+
+.header__link:hover {
+	color: var(--yellow);
+}
+
+
 .header__logo {
-	width: 60px;
+	width: 55px;
 }
 
 .header__logo img {
 	max-width: 100%;
-	border-radius: 10px;
 }
 
 .header__content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 35vw;
+	width: 500px;
 }
 
 .content__title {
+	max-width: 400px;
 	margin-top: 20vh;
 	text-align: center;
 	color: var(--light-gray);
