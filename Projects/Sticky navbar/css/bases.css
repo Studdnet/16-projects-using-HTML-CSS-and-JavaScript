@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+*:focus {
+	outline: 1px solid var(--third-color);
+}
+
 body {
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 15px;
