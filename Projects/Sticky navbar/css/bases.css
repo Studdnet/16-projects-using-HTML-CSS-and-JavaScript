@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 }
 
-*:focus {
-	outline: 1px solid var(--third-color);
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -59,4 +59,8 @@ body {
 .btn:active {
 	position:relative;
 	top:1px;
+}
+
+.text {
+	color: var(--black-color);
 }
