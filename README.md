@@ -2,11 +2,11 @@
 
 [16 HTML CSS JavaScript projects for beginners.](https://youtu.be/EWv2jnhZErc)
 
-1. Digital clock;
-2. Multiplication App;
-3. Button Ripple Effect;
-4. Real-time Character Counter;
-5. Sticky Navbar;
+1. [Digital clock](Projects\DigitalClock\index.html);
+2. [Multiplication App](Projects\MultiplicationApp\index.html);
+3. [Button Ripple Effect](Projects\ButtonRippleEffect\index.html);
+4. [Real-time Character Counter](Projects\Realtimecharactercounter\index.html)
+5. [Sticky Navbar](Projects\Stickynavbar\index.html)
 6. Random Color Generator;
 7. Heart Trail Animation;
 8. Video Trailer Popup;
